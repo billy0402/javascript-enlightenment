@@ -1,0 +1,9 @@
+window.decodeURI();
+window.decodeURIComponent();
+window.encodeURI();
+window.encodeURIComponent();
+window.eval();
+window.isFinite();
+window.isNaN();
+window.parseFloat();
+window.parseInt();
