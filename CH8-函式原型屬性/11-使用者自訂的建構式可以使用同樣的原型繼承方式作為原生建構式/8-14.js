@@ -1,0 +1,20 @@
+var Person = function (legs, arms) {
+    // 遮蓋原型值
+    if (legs !== undefined) {
+        this.legs = legs;
+    }
+    if (arms !== undefined) {
+        this.arms = arms;
+    }
+};
+
+Person.prototype.legs = 2;
+Person.prototype.arms = 2;
+Person.prototype.countLimbs = function () {
+    return this.legs + this.arms;
+};
+
+var chuck = new Person(0, 0);
+
+console.log(chuck.countLimbs());
+// logs 0
